@@ -1,3 +1,6 @@
 body {
     background-color: rgb(222, 250, 241);
 }
+.list {
+    align-content: flex;
+}
