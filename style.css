@@ -1,6 +1,17 @@
-body {
-    background-color: rgb(222, 250, 241);
+* {
+    background: rgb(226, 228, 218);
 }
-.list {
+ul li {
     align-content: flex;
+    background-color: rgb(191, 191, 238);
+    width: 400px;
+}
+
+p{
+    width: 400px;
+    align-content: center;
+    margin-left: 2em;
+}
+.welcome > p{
+    background-color: rgb(205, 164, 50);
 }
