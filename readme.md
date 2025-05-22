@@ -98,7 +98,7 @@ To push the current branch and set the remote as upstream, use
 
 To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.
-
+]
 eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git push --set-upstream origin dev
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
