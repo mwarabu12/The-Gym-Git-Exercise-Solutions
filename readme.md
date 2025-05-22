@@ -311,4 +311,91 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ 
+
+## Bundle 2
+### Exercise 1
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git branch ft/team-page
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git branch
+* dev
+  ft/team-page
+  main
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git branch -d ft/team-page
+Deleted branch ft/team-page (was 4a4d9e0).
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git branch
+* dev
+  main
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git branch ft/bundle-2
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git branch
+* dev
+  ft/bundle-2
+  main
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git switch <!DOCTYPE html>
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git switch ft/bundle 2
+fatal: only one reference expected
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git branch ft/bundle-2
+fatal: a branch named 'ft/bundle-2' already exists
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git branch
+* dev
+  ft/bundle-2
+  main
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git switch ft/bundle-2
+M       readme.md
+Switched to branch 'ft/bundle-2'
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git commit -m "Added services.html file with some changes"
+On branch ft/bundle-2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git add .
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git commit -m "Added services.html file with some changes"
+[ft/bundle-2 c622e2f] Added services.html file with some changes
+ 2 files changed, 56 insertions(+), 1 deletion(-)
+ create mode 100644 services.html
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git switch ft/bundle-2 
+Switched to branch 'ft/bundle-2'
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ git push --set-upstream origin ft/bundle-2
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.10 KiB | 562.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/mwarabu12/The-Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote: 
+To https://github.com/mwarabu12/The-Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+eric-mwarabu@eric-mwarabu:~/Desktop/The Gym/Gym Git Exercise Solutions$ 
 ```
